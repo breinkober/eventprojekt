@@ -13,7 +13,7 @@ $app = new \Slim\Slim(
     'mode' => 'development',
     'debug' => true,
     'view' => new \Slim\Views\Twig(),
-    'templates.path' => '../templates/'
+    'templates.path' => '../templates'
         ]
 );
 
@@ -35,7 +35,7 @@ $app->get('/', function () use ($app) {
     $app->render('sites/login.html.twig');
 });
 $app->get('/admin', function() use ($app) {
-    $app->render('sites/admin.html.twig');
+    $app->render('/sites/admin.html.twig');
 });
 $app->get('/booking/overview', function() use ($app) {
     $app->render('sites/booking-overview.html.twig');
