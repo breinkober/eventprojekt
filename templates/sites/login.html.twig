@@ -1,0 +1,24 @@
+{% extends '../layout.html.twig' %}
+
+{% block head %}
+    {% include 'head_sources.twig' %}
+{% endblock %}
+{% block head_content %}{% endblock %}
+{% block main_content %}
+    <main class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1>Login</h1>
+            </div>
+            <div class="panel-body">
+                <img width="200px;" src="pics/logo.png" alt="Logo-EventAgentur">
+                <form action="verwaltung.php" method="get">
+                    <input class="form-control" type="text" name="email" value="" placeholder="max.mustermann@gmx.de"/><br />
+                    <input class="form-control" type="text" name="password" value=""/><br />
+                    <input class="btn btn-primary" type="submit" name="submit" value="Anmelden"/>
+                </form>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+{% block footer_content %}{% endblock %}

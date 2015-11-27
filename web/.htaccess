@@ -1,0 +1,5 @@
+AuthUserFile /www/htdocs/w013cb06/g18.philipp-marien.de/web/.htpasswd
+AuthGroupFile /dev/null
+AuthName 'ByPassword'
+AuthType Basic
+require valid-user

@@ -1,0 +1,56 @@
+{% extends '../layout.html.twig' %}
+
+{% block head %}
+    {% include 'head_sources.twig' %}
+{% endblock %}
+{% block head_content %}{% endblock %}
+{% block main_content %}
+    <main class="container">
+        <table class="table"> 
+            <caption>Übersicht aller Evente</caption> 
+            <thead> 
+                <tr> 
+                    <th>#</th> 
+                    <th>Thema</th> 
+                    <th>Datum</th> 
+                    <th>Platzzahl</th>
+                    <th>gebuchte Plätze</th> 
+                </tr> 
+            </thead> 
+            <tbody> 
+                <tr> 
+                    <th scope="row">1</th> 
+                    <td>Sex</td> 
+                    <td>53.13.2016</td> 
+                    <td>2000</td> 
+                    <td>1501</td> 
+                </tr> 
+                <tr> 
+                    <th scope="row">2</th> 
+                    <td>Darf er das?</td> 
+                    <td>53.13.2016</td> 
+                    <td>2000</td> 
+                    <td>100</td> 
+                </tr> 
+                <tr> 
+                    <th scope="row">3</th> 
+                    <td>Holzmichel</td> 
+                    <td>53.13.2016</td> 
+                    <td>2000</td> 
+                    <td>2345</td> 
+                </tr> 
+                <tr> 
+                    <th scope="row">3</th> 
+                    <td>Fußball</td> 
+                    <td>53.13.2016</td> 
+                    <td>1032</td> 
+                    <td>100</td> 
+                </tr> 
+            </tbody>
+        </table>
+        <div>
+            <a class="btn btn-default">Neue Veranstaltung erstellen</a>
+        </div>
+    </main>
+{% endblock %}
+{% block footer_content %}{% endblock %}

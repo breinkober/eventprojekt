@@ -1,0 +1,32 @@
+{% extends '../layout.html.twig' %}
+
+{% block head %}
+    {% include 'head_sources.twig' %}
+{% endblock %}
+{% block head_content %}{% endblock %}
+{% block main_content %}
+    <main class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <p>Persönliche Daten</p>
+            </div>
+            <div class="panel-body">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p>Thema</p></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p>Vorname</p></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p>Nachname</p></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p>Straße</p></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p>PLZ</div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p>Ort</p></div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Preis</div>
+            </div>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">AGB und Datenschutz akzeptieren etc.
+            </label>
+        </div>
+        <a class="btn btn-default">Bestätigen</a>
+    </main>
+{% endblock %}
+{% block footer_content %}{% endblock %}
